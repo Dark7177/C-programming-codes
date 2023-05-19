@@ -24,6 +24,7 @@
 
 // strcpy();
 // This function is used to copy the content of one string into other. Expects two parameter . First base address of source string then the base address of the targeted string 
+
 // int main() {
 //     char s[]="Hello Their";
 //     char t[50];
@@ -34,9 +35,32 @@
 
 // strcmp();
 // Used to compare twi strings to find out whether they are same or different 
+
+// int main() {
+//     char s[]= "Hello";
+//     char t[]="World";
+//     int cmp=strcmp(s,t);
+//     printf("Comparison result = %d",cmp);
+// }
+// strrev();
+// This function is used to return the reverse of the string
+
+// int main() {
+//     char s[]="Hello";
+//     printf("Reversed string=%s", strrev(s));
+//     return 0;
+// }
+
+// strcmp();
+// Used To compare two given strings 
+
 int main() {
-    char s[]= "Hello";
-    char t[]="World";
-    int cmp=strcmp(s,t);
-    printf("Comparison result = %d",cmp);
+    char* first_str="Hello";
+    char* second_str="Hello";
+
+    printf("First String= %s\n", first_str);
+    printf("Second String=%s\n", second_str);
+
+    printf("Return value of strcmp(): %d\n", strcmp(first_str, second_str));
+    return 0;
 }
