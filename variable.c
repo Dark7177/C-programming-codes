@@ -1,20 +1,16 @@
 #include<stdio.h>
 
-int b=34;
-
-int func1(int b1) {
-    static int myvar=98;
-    printf("The value of myvar is %d\n", &b);
-    myvar++;
-
-    return b1+myvar++;
+int func1(int b) {
+    printf("The address of b inside func1 is %d\n", &b);
+    return b*10;
 }
 
 int main() {
-    int b=344;
-    int val=func1(b);
-    val= func1(b);
-    int*ptra =&val;
-    printf("Value of int *ptra %d\n", &b);
+    int b =344;
+    printf("The address of b inside main is %d\n", &b);
+    int val= func1(b);
+    int *ptra= &val;
+    printf("The value of func1 is %d\n", val);
+
     return 0;
 }
