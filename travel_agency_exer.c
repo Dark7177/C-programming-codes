@@ -13,14 +13,14 @@ struct driver
     char Name[30];
     char License_no[40];
     char Route[120];
-    float kms;
+    int kms;
 } driver_1, driver_2, driver_3;
 
 int main()
 {
     for (int i = 1; i < 4; i++)
     {
-        switch (i = 1, 2, 3)
+        switch (i)
         {
         case 1:
             printf("Enter your name as per our records\n");
@@ -30,7 +30,7 @@ int main()
             printf("Enter your Route detail\n");
             scanf("%s", &driver_1.Route);
             printf("Enter your drivem kms\n");
-            scanf("%f", &driver_1.kms);
+            scanf("%d", &driver_1.kms);
 
         case 2:
             printf("Enter your name as per our records\n");
@@ -40,7 +40,7 @@ int main()
             printf("Enter your Route detail\n");
             scanf("%s", &driver_2.Route);
             printf("Enter your drivem kms\n");
-            scanf("%f", &driver_2.kms);
+            scanf("%d", &driver_2.kms);
 
         case 3:
             printf("Enter your name as per our records\n");
@@ -50,7 +50,7 @@ int main()
             printf("Enter your Route detail\n");
             scanf("%s", &driver_3.Route);
             printf("Enter your drivem kms\n");
-            scanf("%f", &driver_3.kms);
+            scanf("%d", &driver_3.kms);
 
             goto print;
 
@@ -65,16 +65,16 @@ print:
     printf("Your entered name is %s\n", driver_1.Name);
     printf("Your licenso no is %s\n", driver_1.License_no);
     printf("Your entered name is %s\n", driver_1.Route);
-    printf("Your entered name is %f\n", driver_1.kms);
+    printf("Your entered name is %d\n", driver_1.kms);
 
     printf("Your entered name is %s\n", driver_2.Name);
     printf("Your licenso no is %s\n", driver_2.License_no);
     printf("Your entered name is %s\n", driver_2.Route);
-    printf("Your entered name is %f\n", driver_2.kms);
+    printf("Your entered name is %d\n", driver_2.kms);
 
     printf("Your entered name is %s\n", driver_3.Name);
     printf("Your licenso no is %s\n", driver_3.License_no);
     printf("Your entered name is %s\n", driver_3.Route);
-    printf("Your entered name is %f\n", driver_3.kms);
+    printf("Your entered name is %d\n", driver_3.kms);
     return 0;
 }
