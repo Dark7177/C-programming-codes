@@ -11,11 +11,26 @@
 struct driver
 {
     char Name[30];
-    float License_no;
-    char Route[50];
-    int kms;
+    char License_no[40];
+    char Route[120];
+    float kms;
 } driver_1, driver_2, driver_3;
 
 int main()
 {
+    printf("Enter your name as per our records\n");
+    scanf("%s", &driver_1.Name);
+    printf("Enter your license no as per record\n");
+    scanf("%s", &driver_1.License_no);
+    printf("Enter your Route detail\n");
+    scanf("%s", &driver_1.Route);
+    printf("Enter your drivem kms\n");
+    scanf("%f", &driver_1.kms);
+
+    printf("Your entered name is %s\n", driver_1.Name);
+    printf("Your licenso no is %s\n", driver_1.License_no);
+    printf("Your entered name is %s\n", driver_1.Route);
+    printf("Your entered name is %f\n", driver_1.kms);
+
+    return 0;
 }
