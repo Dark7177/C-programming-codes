@@ -20,7 +20,7 @@ int main()
 {
     for (int i = 1; i < 4; i++)
     {
-        switch (i=1,2,3)
+        switch (i = 1, 2, 3)
         {
         case 1:
             printf("Enter your name as per our records\n");
@@ -53,6 +53,7 @@ int main()
             scanf("%f", &driver_3.kms);
 
             goto print;
+
         default:
             break;
         }
