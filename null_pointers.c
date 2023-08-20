@@ -11,6 +11,5 @@ int main() {
         printf("The pointer is a null pointer and cannot be dereferenced ");
     }
     
-    
     return 0;
 }
